@@ -1,13 +1,6 @@
 [build]
-  command = "hugo"
-  publish = "public"
-<<<<<<< HEAD
-=======
   publish = "public"
   command = "hugo"
->>>>>>> d74e618 (Add Netlify config with Hugo version)
-=======
->>>>>>> e8b1c6f (Fixed netlify.toml)
 
 [context.production.environment]
   HUGO_VERSION = "0.147.6"

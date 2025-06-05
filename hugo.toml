@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-=======
 baseURL = "https://your-site-name.netlify.app/"
 languageCode = "en-us"
 title = "My Portfolio"
@@ -11,4 +6,3 @@ theme = "PaperMod"
 [params]
   author = "Mastermind Mitch"
 
->>>>>>> 7d03eb4 (Add theme and test contetn)
