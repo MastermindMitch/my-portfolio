@@ -1,3 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+<<<<<<< HEAD
+=======
+theme = "ananke"
+>>>>>>> d74e618f8ba533d01f2c64b4730dc621e1644fec
