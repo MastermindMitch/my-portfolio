@@ -1,11 +1,7 @@
 [build]
-<<<<<<< HEAD
   command = "hugo"
   publish = "public"
-=======
-  publish = "public"
-  command = "hugo"
->>>>>>> d74e618f8ba533d01f2c64b4730dc621e1644fec
 
 [context.production.environment]
   HUGO_VERSION = "0.147.6"
+
