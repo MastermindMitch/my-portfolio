@@ -28,11 +28,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;I’d love to hear from you! Please fill out the form below:&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Send&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
+&lt;form name=&#34;contact&#34; method=&#34;POST&#34; data-netlify=&#34;true&#34;&gt;
+  &lt;label&gt;
+    Your name:&lt;br&gt;
+    &lt;input type=&#34;text&#34; name=&#34;name&#34; required&gt;
+  &lt;/label&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;label&gt;
+    Your email:&lt;br&gt;
+    &lt;input type=&#34;email&#34; name=&#34;email&#34; required&gt;
+  &lt;/label&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;label&gt;
+    Your message:&lt;br&gt;
+    &lt;textarea name=&#34;message&#34; required&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+  &lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;&lt;/p&gt;
+&lt;/form&gt;</description>
     </item>
   </channel>
 </rss>
