@@ -54,59 +54,62 @@ a[href$="/contact/"] .active::after {
   }
 }
 
-/* ---------- Contact Form ---------- */
+/* ---------- Contact Form (Dark Theme Override) ---------- */
 form[name="contact"] {
   max-width: 500px;
   margin: 40px auto;
   padding: 25px;
-  background: #1E1E1E; /* dark gray background */
-  border: 1px solid #444;
+  background: #1E1E1E !important; /* dark gray background */
+  border: 1px solid #444 !important;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0,0,0,0.6);
-  color: #E0E0E0; /* light text */
+  color: #E0E0E0 !important;
+}
+
+form[name="contact"] p {
+  margin-bottom: 18px;
 }
 
 form[name="contact"] label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-weight: 600;
-  color: #E0E0E0;
+  color: #E0E0E0 !important;
 }
 
 form[name="contact"] input,
 form[name="contact"] textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  margin-bottom: 18px;
-  border: 1px solid #555;
-  border-radius: 6px;
-  background: #2B2B2B;
-  color: #E0E0E0;
-  font-size: 15px;
-  transition: all 0.2s ease;
+  width: 100% !important;
+  padding: 10px !important;
+  border: 1px solid #555 !important;
+  border-radius: 6px !important;
+  background: #2B2B2B !important;
+  color: #E0E0E0 !important;
+  font-size: 15px !important;
+  transition: all 0.2s ease !important;
 }
 
 form[name="contact"] input:focus,
 form[name="contact"] textarea:focus {
-  border-color: #D62828; /* red accent on focus */
-  outline: none;
-  background: #1B1B1B;
+  border-color: #D62828 !important; /* Sith red */
+  outline: none !important;
+  background: #1B1B1B !important;
 }
 
 form[name="contact"] button {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 6px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  background: #D62828;  /* Sith red */
-  color: #fff;
-  transition: background-color 0.2s ease;
+  display: inline-block !important;
+  padding: 10px 18px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  background: #D62828 !important;  /* Sith red */
+  color: #fff !important;
+  transition: background-color 0.2s ease !important;
 }
 
 form[name="contact"] button:hover {
-  background: #A31D1D; /* darker red on hover */
+  background: #A31D1D !important; /* darker red on hover */
 }
+
 
