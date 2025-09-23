@@ -1,14 +1,27 @@
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
+<form name="contact" method="POST" data-netlify="true" style="max-width:500px; margin:auto; padding:20px; background:#f9f9f9; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); font-family:Arial, sans-serif;">
+  <p style="margin-bottom:16px;">
+    <label style="display:block; margin-bottom:6px; font-weight:bold;">Your Name:</label>
+    <input type="text" name="name" required
+      style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box;">
   </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+
+  <p style="margin-bottom:16px;">
+    <label style="display:block; margin-bottom:6px; font-weight:bold;">Your Email:</label>
+    <input type="email" name="email" required
+      style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box;">
   </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
+
+  <p style="margin-bottom:16px;">
+    <label style="display:block; margin-bottom:6px; font-weight:bold;">Message:</label>
+    <textarea name="message" required
+      style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; min-height:120px; box-sizing:border-box;"></textarea>
   </p>
-  <p>
-    <button type="submit">Send</button>
+
+  <p style="text-align:right; margin:0;">
+    <button type="submit"
+      style="padding:10px 20px; background-color:#0077cc; color:white; border:none; border-radius:4px; cursor:pointer; font-weight:bold;">
+      Send
+    </button>
   </p>
 </form>
+
