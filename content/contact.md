@@ -1,4 +1,4 @@
-<form name="contact" method="POST" data-netlify="true" style="max-width:400px; margin:auto; display:flex; flex-direction:column; gap:12px;">
+<form name="contact" netlify">
   <label>
     Your name:
     <input type="text" name="name" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
