@@ -27,22 +27,19 @@
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;form name=&#34;contact&#34; netlify&#34;&gt;
-  &lt;label&gt;
-    Your name:
-    &lt;input type=&#34;text&#34; name=&#34;name&#34; required style=&#34;width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;&#34;&gt;
-  &lt;/label&gt;
-  &lt;label&gt;
-    Your email:
-    &lt;input type=&#34;email&#34; name=&#34;email&#34; required style=&#34;width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;&#34;&gt;
-  &lt;/label&gt;
-  &lt;label&gt;
-    Your message:
-    &lt;textarea name=&#34;message&#34; required style=&#34;width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; min-height:120px;&#34;&gt;&lt;/textarea&gt;
-  &lt;/label&gt;
-  &lt;button type=&#34;submit&#34; style=&#34;padding:10px; background-color:#0077cc; color:white; border:none; border-radius:4px; cursor:pointer;&#34;&gt;
-    Send
-  &lt;/button&gt;
+      <description>&lt;form name=&#34;contact&#34; method=&#34;POST&#34; data-netlify=&#34;true&#34;&gt;
+  &lt;p&gt;
+    &lt;label&gt;Your Name: &lt;input type=&#34;text&#34; name=&#34;name&#34; /&gt;&lt;/label&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;label&gt;Your Email: &lt;input type=&#34;email&#34; name=&#34;email&#34; /&gt;&lt;/label&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;label&gt;Message: &lt;textarea name=&#34;message&#34;&gt;&lt;/textarea&gt;&lt;/label&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;
+  &lt;/p&gt;
 &lt;/form&gt;</description>
     </item>
   </channel>

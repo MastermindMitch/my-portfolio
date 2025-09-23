@@ -1,21 +1,14 @@
-<form name="contact" netlify">
-  <label>
-    Your name:
-    <input type="text" name="name" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
-  </label>
-
-  <label>
-    Your email:
-    <input type="email" name="email" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
-  </label>
-
-  <label>
-    Your message:
-    <textarea name="message" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; min-height:120px;"></textarea>
-  </label>
-
-  <button type="submit" style="padding:10px; background-color:#0077cc; color:white; border:none; border-radius:4px; cursor:pointer;">
-    Send
-  </button>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
 </form>
-
