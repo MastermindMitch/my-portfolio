@@ -112,4 +112,16 @@ form[name="contact"] button:hover {
   background: #A31D1D !important; /* darker red on hover */
 }
 
+/* === Fix autofill colors (Chrome, Edge, Safari) === */
+form[name="contact"] input:-webkit-autofill,
+form[name="contact"] input:-webkit-autofill:hover,
+form[name="contact"] input:-webkit-autofill:focus,
+form[name="contact"] textarea:-webkit-autofill,
+form[name="contact"] textarea:-webkit-autofill:hover,
+form[name="contact"] textarea:-webkit-autofill:focus {
+  border: 1px solid #D62828 !important;   /* keep red border if focused */
+  -webkit-text-fill-color: #E0E0E0 !important; /* light gray text */
+  -webkit-box-shadow: 0 0 0px 1000px #2B2B2B inset !important; /* force dark background */
+  transition: background-color 5000s ease-in-out 0s !important;
+}
 
