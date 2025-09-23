@@ -6,3 +6,14 @@ theme = "PaperMod"
 [params]
   author = "Mastermind Mitch"
 
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 2

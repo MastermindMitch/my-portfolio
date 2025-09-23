@@ -1,0 +1,32 @@
+<!-- layouts/partials/extend_head.html -->
+<link rel="stylesheet" href="/css/custom.css">
+
+<script>
+/*
+  Small helper: after the DOM loads, find the Contact link (by href end or title),
+  add a stable class ("contact-btn") to it and to its inner span. Also, if the
+  link's parent is a flex container, set margin-left:auto so it moves to the right.
+*/
+document.addEventListener('DOMContentLoaded', function () {
+  // Try a couple of selectors to be robust across themes:
+  var sel = 'a[href$="/contact/"], a[title="Contact"], a[href$="/contact"]';
+  var a = document.querySelector(sel);
+  if (!a) return;
+
+  // Add class to anchor and inner span
+  a.classList.add('contact-btn');
+  var sp = a.querySelector('span.active');
+  if (sp) sp.classList.add('contact-btn-inner');
+
+  // If the direct parent is a flex container, push the link to the right
+  var p = a.parentElement;
+  if (p) {
+    var style = window.getComputedStyle(p);
+    if (style && style.display && style.display.indexOf('flex') === 0) {
+      a.style.marginLeft = 'auto';
+      a.style.alignSelf = 'center';
+    }
+  }
+});
+</script>
+

@@ -1,0 +1,60 @@
+/* static/css/custom.css
+   Styles the Contact link into a button consistently on all pages.
+*/
+
+/* ---------- Base button look (always applied) ---------- */
+a[href$="/contact/"] {
+  display: inline-block !important;
+  background: #525252 !important;       /* default button background */
+  color: #FFFFFF !important;
+  padding: 8px 14px !important;         /* consistent padding */
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+  transition: background-color .18s ease, color .18s ease;
+}
+
+/* If theme adds <span class="active">, make it transparent and let <a> handle padding */
+a[href$="/contact/"] .active {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;    /* avoid double padding */
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  display: inline !important;
+}
+
+/* ---------- Hover / focus ---------- */
+a[href$="/contact/"]:hover,
+a[href$="/contact/"]:focus {
+  background: #C7C7C7 !important;
+  color: #000000 !important;
+  outline: none !important;
+}
+
+a[href$="/contact/"]:focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.18) !important;
+}
+
+/* ---------- Remove theme underline/markers ---------- */
+a[href$="/contact/"]::before,
+a[href$="/contact/"]::after,
+a[href$="/contact/"] .active::before,
+a[href$="/contact/"] .active::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* ---------- Responsive tweak ---------- */
+@media (max-width: 700px) {
+  a[href$="/contact/"] {
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+}
+
