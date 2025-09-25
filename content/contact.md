@@ -38,7 +38,7 @@ title: "Contact"
 
 <!-- Social Links Section -->
 <div class="social-links">
-  <h3>Connect with me</h3>
+  <h1>Connect with me</h1>
   <div class="social-icons">
     <!-- LinkedIn -->
     <a href="#" target="_blank" aria-label="LinkedIn">
