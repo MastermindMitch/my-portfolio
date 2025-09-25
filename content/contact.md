@@ -1,9 +1,11 @@
 ---
 title: "Contact"
 ---
+
+{{< rawhtml >}}
 <div class="contact-intro">
   <p>
-    Fill out the form below or email me directly at  
+    Fill out the form below or email me directly at
     <a href="mailto:mthenry@ksu.edu">mthenry@ksu.edu</a>.
   </p>
 </div>
@@ -76,3 +78,4 @@ title: "Contact"
     color: #0077b5;
   }
 </style>
+{{< /rawhtml >}}
