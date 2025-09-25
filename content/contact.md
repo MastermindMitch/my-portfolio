@@ -1,3 +1,9 @@
+---
+title: "Contact"
+showtoc: false
+hideTitle: true
+---
+
 <form name="contact" method="POST" data-netlify="true" style="max-width:500px; margin:auto; padding:20px; background:#f9f9f9; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); font-family:Arial, sans-serif;">
   <p style="margin-bottom:16px;">
     <label style="display:block; margin-bottom:6px; font-weight:bold;">Your Name:</label>
