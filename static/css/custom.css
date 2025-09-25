@@ -148,74 +148,43 @@ form[name="contact"] textarea:-webkit-autofill:focus {
   gap: 1.5rem;
   margin-top: 0.6rem;
   align-items: center;
-  /* isolate to create its own stacking context to reduce rendering artifacts */
-  isolation: isolate;
 }
 
-/* anchor wrapper - small padding avoids touching neighbor pixels */
+/* anchor wrapper */
 .social-icons a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 6px;
   border-radius: 8px;
-  background: transparent;
   color: inherit;
   text-decoration: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  will-change: transform, color;
-  /* give a tiny transparent border so the rendered area is consistent across states */
-  border: 1px solid transparent;
-  /* avoid visual selection / outlines */
-  outline: none;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-/* SVG: scale the vector directly (less chance of alias edge artifacts) */
+/* SVG stays sharp and untouched */
 .social-icons svg {
-  display: block;                /* prevent inline baseline artifacts */
   width: 32px;
   height: 32px;
-  transition: transform 0.18s cubic-bezier(.2,.8,.2,1), color 0.18s ease;
-  transform-origin: center center;
-  transform-box: fill-box;
-  -webkit-transform-box: fill-box;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* ensure fill uses currentColor (SVGs should have fill="currentColor") */
+  display: block;
   fill: currentColor;
 }
 
-/* Hover: scale the svg only and change anchor color to brand color */
-.social-icons a:hover svg {
-  transform: none;
-  opacity: 0.9;
+/* Hover: scale wrapper instead of SVG */
+.social-icons a:hover {
+  transform: scale(1.15);
 }
 
-/* Hover color tints (use brand colors) */
-.social-icons a.linkedin:hover { color: #0077b5; }   /* LinkedIn blue */
-.social-icons a.handshake:hover { color: #f68b1f; }  /* Handshake orange-ish */
-.social-icons a.github:hover { color: #333333; }     /* GitHub dark */
+/* Hover brand colors */
+.social-icons a[aria-label="LinkedIn"]:hover { color: #0077b5; }
+.social-icons a[aria-label="Handshake"]:hover { color: #f68b1f; }
+.social-icons a[aria-label="GitHub"]:hover { color: #333333; }
 
-/* Ensure no outline or stray line appears during transitions */
+/* Remove outline/focus junk */
 .social-icons a:focus,
 .social-icons a:active {
   outline: none;
   box-shadow: none;
-}
-
-/* Fallback: if the flicker persists on a specific browser, use an opacity animation instead of scale */
-.social-icons.no-scale svg {
-  transition: opacity 0.18s ease, color 0.18s ease;
-  transform: none !important;
-}
-.social-icons.no-scale a:hover svg {
-  opacity: 0.92;
-  /* color change still applies */
 }
 
 /* small responsive tweak */
