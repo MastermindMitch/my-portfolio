@@ -173,21 +173,15 @@ form[name="contact"] textarea:-webkit-autofill:focus {
   outline: none;
 }
 
-/* SVG: scale the vector directly (less chance of alias edge artifacts) */
+/* SVG: force GPU acceleration and crisp edges */
 .social-icons svg {
-  display: block;                /* prevent inline baseline artifacts */
-  width: 32px;
-  height: 32px;
-  transition: transform 0.18s cubic-bezier(.2,.8,.2,1), color 0.18s ease;
-  transform-origin: center center;
-  transform-box: fill-box;
-  -webkit-transform-box: fill-box;
-  -webkit-backface-visibility: hidden;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* ensure fill uses currentColor (SVGs should have fill="currentColor") */
-  fill: currentColor;
+  will-change: transform;
 }
 
 /* Hover: scale the svg only and change anchor color to brand color */
