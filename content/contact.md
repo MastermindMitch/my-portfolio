@@ -4,7 +4,7 @@ title: "Contact"
 <div class="contact-intro">
   <p>
     Fill out the form below or email me directly at  
-    <a href="mthenry@ksu.edu.">mthenry@ksu.edu</a>.
+    <a href="mailto:mthenry@ksu.edu">mthenry@ksu.edu</a>.
   </p>
 </div>
 
