@@ -141,7 +141,6 @@ form[name="contact"] textarea:-webkit-autofill:focus {
   color: #e0e0e0;
 }
 
-/* container for icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -160,9 +159,12 @@ form[name="contact"] textarea:-webkit-autofill:focus {
   color: inherit;
   text-decoration: none;
   transition: transform 0.2s ease, color 0.2s ease;
+  background: transparent; /* keep background clean */
+  border: none;            /* remove border that caused stray lines */
+  box-shadow: none;        /* prevent ghost lines */
 }
 
-/* SVG stays sharp and untouched */
+/* SVG stays sharp */
 .social-icons svg {
   width: 32px;
   height: 32px;
@@ -170,7 +172,7 @@ form[name="contact"] textarea:-webkit-autofill:focus {
   fill: currentColor;
 }
 
-/* Hover: scale wrapper instead of SVG */
+/* Hover effect */
 .social-icons a:hover {
   transform: scale(1.15);
 }
@@ -180,14 +182,14 @@ form[name="contact"] textarea:-webkit-autofill:focus {
 .social-icons a[aria-label="Handshake"]:hover { color: #f68b1f; }
 .social-icons a[aria-label="GitHub"]:hover { color: #333333; }
 
-/* Remove outline/focus junk */
+/* Accessibility cleanup */
 .social-icons a:focus,
 .social-icons a:active {
   outline: none;
   box-shadow: none;
 }
 
-/* small responsive tweak */
+/* Responsive */
 @media (max-width: 480px) {
   .social-icons {
     gap: 1rem;
@@ -197,3 +199,4 @@ form[name="contact"] textarea:-webkit-autofill:focus {
     height: 28px;
   }
 }
+
