@@ -35,3 +35,40 @@ title: "Contact"
   </p>
 </form>
 
+<!-- Social Links Section -->
+<div class="social-links">
+  <h3>Connect with me</h3>
+  <div class="social-buttons">
+    <a href="#" target="_blank" class="social-btn linkedin">LinkedIn</a>
+    <a href="#" target="_blank" class="social-btn handshake">Handshake</a>
+    <a href="#" target="_blank" class="social-btn github">GitHub</a>
+    <a href="#" target="_blank" class="social-btn twitter">Twitter</a>
+  </div>
+</div>
+
+<style>
+  .social-links {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  .social-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s;
+  }
+  .social-btn.linkedin { background: #0077b5; }
+  .social-btn.handshake { background: #0a66c2; }
+  .social-btn.github { background: #333; }
+  .social-btn.twitter { background: #1da1f2; }
+  .social-btn:hover { opacity: 0.85; }
+</style>
