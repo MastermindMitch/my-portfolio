@@ -1,0 +1,50 @@
+<!-- Force dark theme -->
+<script>
+  document.body.classList.add('dark');
+</script>
+
+<header class="header">
+  <nav class="nav" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    <!-- Logo and Title -->
+    <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+      <a href="{{ "" | absLangURL }}" accesskey="h" 
+         title="Mitchell Henry’s Portfolio (Alt + H)"
+         style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+        <img src="{{ "images/headshot.jpg" | absURL }}" 
+             alt="Mitchell Henry" 
+             style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; box-shadow; margin-top: 15px">
+        <span style="font-weight: 700; font-size: 2rem;">Mitchell's Portfolio</span>
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul id="menu" style="list-style: none; display: flex; gap: 20px; margin: 0;">
+      {{- $currentPage := . }}
+      {{- range site.Menus.main }}
+        {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absLangURL }}
+        {{- $page_url := $currentPage.Permalink | absLangURL }}
+        {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+        <li>
+          <a href="{{ .URL | absLangURL }}" 
+             title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+             {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
+             style="text-decoration: none; color: inherit;">
+            <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}
+                  style="font-weight: 500; color: #fff;">
+              {{- .Pre }}{{- .Name -}}{{ .Post -}}
+            </span>
+            {{- if (findRE "://" .URL) }}&nbsp;
+              <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14L21 3"></path>
+              </svg>
+            {{- end }}
+          </a>
+        </li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>
+

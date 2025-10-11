@@ -1,0 +1,202 @@
+/* static/css/custom.css
+   Styles for contact button + contact form
+*/
+
+/* ---------- Contact Button ---------- */
+a[href$="/contact/"] {
+  display: inline-block !important;
+  background: #525252 !important;       /* default button background */
+  color: #FFFFFF !important;
+  padding: 8px 14px !important;         
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+  transition: background-color .18s ease, color .18s ease;
+}
+
+a[href$="/contact/"] .active {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;    
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  display: inline !important;
+}
+
+a[href$="/contact/"]:hover,
+a[href$="/contact/"]:focus {
+  background: #C7C7C7 !important;
+  color: #000000 !important;
+  outline: none !important;
+}
+
+a[href$="/contact/"]:focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.18) !important;
+}
+
+a[href$="/contact/"]::before,
+a[href$="/contact/"]::after,
+a[href$="/contact/"] .active::before,
+a[href$="/contact/"] .active::after {
+  display: none !important;
+  content: none !important;
+}
+
+@media (max-width: 700px) {
+  a[href$="/contact/"] {
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* ---------- Contact Form (Dark Theme Override) ---------- */
+form[name="contact"] {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #1E1E1E !important; /* dark gray background */
+  border: 1px solid #444 !important;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  color: #E0E0E0 !important;
+}
+
+form[name="contact"] p {
+  margin-bottom: 18px;
+}
+
+form[name="contact"] label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #E0E0E0 !important;
+}
+
+form[name="contact"] input,
+form[name="contact"] textarea {
+  width: 100% !important;
+  padding: 10px !important;
+  border: 1px solid #555 !important;
+  border-radius: 6px !important;
+  background: #2B2B2B !important;
+  color: #E0E0E0 !important;
+  font-size: 15px !important;
+  transition: all 0.2s ease !important;
+}
+
+form[name="contact"] input:focus,
+form[name="contact"] textarea:focus {
+  border-color: #D62828 !important; /* Sith red */
+  outline: none !important;
+  background: #1B1B1B !important;
+}
+
+form[name="contact"] button {
+  display: inline-block !important;
+  padding: 10px 18px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  background: #D62828 !important;  /* Sith red */
+  color: #fff !important;
+  transition: background-color 0.2s ease !important;
+}
+
+form[name="contact"] button:hover {
+  background: #A31D1D !important; /* darker red on hover */
+}
+
+/* === Autofill Fix (dark mode consistent) === */
+form[name="contact"] input:-webkit-autofill,
+form[name="contact"] textarea:-webkit-autofill {
+  -webkit-text-fill-color: #E0E0E0 !important; /* keep light text */
+  -webkit-box-shadow: 0 0 0px 1000px #2B2B2B inset !important; /* dark background */
+  transition: background-color 5000s ease-in-out 0s !important;
+  border: 1px solid #555 !important; /* default border, not red */
+}
+
+/* Autofill + focus should get the red outline */
+form[name="contact"] input:-webkit-autofill:focus,
+form[name="contact"] textarea:-webkit-autofill:focus {
+  border: 1px solid #D62828 !important; /* Sith red when focused */
+}
+
+/* ---------- Social Links (icons) ---------- */
+.social-links {
+  margin-top: 2rem;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.social-links h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.6rem;
+  align-items: center;
+}
+
+/* anchor wrapper */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+  background: transparent; /* keep background clean */
+  border: none;            /* remove border that caused stray lines */
+  box-shadow: none;        /* prevent ghost lines */
+}
+
+/* SVG stays sharp */
+.social-icons svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  fill: currentColor;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  transform: scale(1.15);
+}
+
+/* Hover brand colors */
+.social-icons a[aria-label="LinkedIn"]:hover { color: #0077b5; }
+.social-icons a[aria-label="Handshake"]:hover { color: #f68b1f; }
+.social-icons a[aria-label="GitHub"]:hover { color: #333333; }
+
+/* Accessibility cleanup */
+.social-icons a:focus,
+.social-icons a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 1rem;
+  }
+  .social-icons svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+

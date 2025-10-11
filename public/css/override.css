@@ -1,0 +1,27 @@
+/* Force the navbar to span full width */
+.header,
+.nav,
+.navbar,
+header {
+  max-width: 100% !important;
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Make sure background color fills full width */
+.header-background,
+header {
+  background-color: #1e1e1e !important; /* or whatever your dark theme color is */
+}
+
+/* Optional: center the navbar content neatly */
+.navbar-inner,
+.header__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+

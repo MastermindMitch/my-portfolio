@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Mitchell&#39;s Portfolio</title>
+    <link>https://mitchell-henry.netlify.app/projects/</link>
+    <description>Recent content in Projects on Mitchell&#39;s Portfolio</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mitchell-henry.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autonomous Combat Robot</title>
+      <link>https://mitchell-henry.netlify.app/projects/project1/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://mitchell-henry.netlify.app/projects/project1/</guid>
+      <description>An autonomous combat robot with real-time AI position tracking and LIDAR-based navigation.</description>
+    </item>
+    <item>
+      <title>Nylon Heat Welder</title>
+      <link>https://mitchell-henry.netlify.app/projects/project2/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://mitchell-henry.netlify.app/projects/project2/</guid>
+      <description>Designed a machine that presses two solid nylon rods against a hot plate and then against each other to heat weld them. The rods were wrapped around four- foot drums, and had a natural curvature to them</description>
+    </item>
+    <item>
+      <title>Hose Accumulator</title>
+      <link>https://mitchell-henry.netlify.app/projects/project4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mitchell-henry.netlify.app/projects/project4/</guid>
+      <description>A machine that goes on an assembly line to hold one end of a hose still while accumulating incoming hose</description>
+    </item>
+    <item>
+      <title>Maze Bot</title>
+      <link>https://mitchell-henry.netlify.app/projects/project3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mitchell-henry.netlify.app/projects/project3/</guid>
+      <description>Mechatronics class project to navigate through a maze without touching a wall</description>
+    </item>
+  </channel>
+</rss>
