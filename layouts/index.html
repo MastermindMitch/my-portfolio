@@ -1,0 +1,91 @@
+{{ define "main" }}
+<style>
+  /* Override any PaperMod container constraints */
+  main {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force the section to stretch across the screen */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    margin: 0;
+    width: 100vw;              /* Full viewport width */
+    box-sizing: border-box;
+    background: transparent;
+    justify-items: center;
+  }
+
+  /* Project card styling */
+  .project-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 90%;               /* Slight padding inside each column */
+    max-width: none;          /* No artificial limit */
+  }
+
+  .project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(242, 29, 27, 0.5);
+  }
+
+  /* Image styling */
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Text section */
+  .project-card-content {
+    padding: 15px;
+  }
+
+  .project-card-content h2 {
+    color: #e53935;
+    margin: 0 0 10px;
+  }
+
+  .project-card-content p {
+    color: #ddd;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1000px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 650px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="projects-grid">
+  {{ range .Site.RegularPages }}
+    {{ if eq .Section "projects" }}
+      <div class="project-card">
+        <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}">
+          <div class="project-card-content">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Params.description }}</p>
+          </div>
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
+

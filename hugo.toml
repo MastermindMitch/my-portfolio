@@ -1,0 +1,27 @@
+baseURL = "https://mitchell-henry.netlify.app/"
+languageCode = "en-us"
+title = "Mitchell's Portfolio"
+theme = "PaperMod"
+
+[params]
+  customCSS = ["css/override.css"]
+  #author = "Mastermind Mitch"
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.151.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Mitchell&#39;s Portfolio</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon7.png" type="image/png" sizes="32x32">
+<meta name="theme-color" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="/css/custom.css">
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+  var sel = 'a[href$="/contact/"], a[title="Contact"], a[href$="/contact"]';
+  var a = document.querySelector(sel);
+  if (!a) return;
+
+  
+  a.classList.add('contact-btn');
+  var sp = a.querySelector('span.active');
+  if (sp) sp.classList.add('contact-btn-inner');
+
+  
+  var p = a.parentElement;
+  if (p) {
+    var style = window.getComputedStyle(p);
+    if (style && style.display && style.display.indexOf('flex') === 0) {
+      a.style.marginLeft = 'auto';
+      a.style.alignSelf = 'center';
+    }
+  }
+});
+</script>
+
+<link rel="stylesheet" href="/css/override.css">
+</head>
+
+<body class="list" id="top">
+<script>
+  document.body.classList.add('dark');
+</script>
+
+<header class="header">
+  <nav class="nav" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    
+    <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+      <a href="http://localhost:1313/" accesskey="h" 
+         title="Mitchell Henry’s Portfolio (Alt + H)"
+         style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+        <img src="http://localhost:1313/images/headshot.jpg" 
+             alt="Mitchell Henry" 
+             style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; box-shadow; margin-top: 15px">
+        <span style="font-weight: 700; font-size: 2rem;">Mitchell's Portfolio</span>
+      </a>
+    </div>
+
+    
+    <ul id="menu" style="list-style: none; display: flex; gap: 20px; margin: 0;">
+        <li>
+          <a href="http://localhost:1313/" 
+             title="Home"
+             style="text-decoration: none; color: inherit;">
+            <span class="active"
+                  style="font-weight: 500; color: #fff;">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/contact/" 
+             title="Contact"
+             style="text-decoration: none; color: inherit;">
+            <span
+                  style="font-weight: 500; color: #fff;">Contact</span>
+          </a>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+<style>
+   
+  main {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+   
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    margin: 0;
+    width: 100vw;               
+    box-sizing: border-box;
+    background: transparent;
+    justify-items: center;
+  }
+
+   
+  .project-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 90%;                
+    max-width: none;           
+  }
+
+  .project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(242, 29, 27, 0.5);
+  }
+
+   
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+   
+  .project-card-content {
+    padding: 15px;
+  }
+
+  .project-card-content h2 {
+    color: #e53935;
+    margin: 0 0 10px;
+  }
+
+  .project-card-content p {
+    color: #ddd;
+  }
+
+   
+  @media (max-width: 1000px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 650px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="projects-grid">
+  
+    
+  
+    
+  
+    
+      <div class="project-card">
+        <a href="/projects/autonomouscombatrobot/" style="text-decoration: none; color: inherit;">
+          <img src="/images/test.jpg" alt="Autonomous Combat Robot">
+          <div class="project-card-content">
+            <h2>Autonomous Combat Robot</h2>
+            <p>An autonomous combat robot with real-time AI position tracking and LIDAR-based navigation.</p>
+          </div>
+        </a>
+      </div>
+    
+  
+    
+  
+    
+      <div class="project-card">
+        <a href="/projects/hoseaccumulator/" style="text-decoration: none; color: inherit;">
+          <img src="images/HoseAccumulatorThumbnail.png" alt="Hose Accumulator">
+          <div class="project-card-content">
+            <h2>Hose Accumulator</h2>
+            <p>A compact vertical accumulator that stores hose during high-speed assembly line operations.</p>
+          </div>
+        </a>
+      </div>
+    
+  
+    
+      <div class="project-card">
+        <a href="/projects/mazebot/" style="text-decoration: none; color: inherit;">
+          <img src="images/MazeBotThumbnail.jpg" alt="Maze Bot">
+          <div class="project-card-content">
+            <h2>Maze Bot</h2>
+            <p>Autonomous maze-solving robot that maps and optimizes the path without touching any walls</p>
+          </div>
+        </a>
+      </div>
+    
+  
+    
+      <div class="project-card">
+        <a href="/projects/nylonheatwelder/" style="text-decoration: none; color: inherit;">
+          <img src="images/NylonHeatWelderThumbnail.jpg" alt="Nylon Heat Welder">
+          <div class="project-card-content">
+            <h2>Nylon Heat Welder</h2>
+            <p>Designed a machine to heat weld two nylon rods</p>
+          </div>
+        </a>
+      </div>
+    
+  
+    
+      <div class="project-card">
+        <a href="/projects/rollercoastercadmodel/" style="text-decoration: none; color: inherit;">
+          <img src="images/MillenniumForceModel.png" alt="Roller Coaster CAD Model">
+          <div class="project-card-content">
+            <h2>Roller Coaster CAD Model</h2>
+            <p>CAD model of the first ride I ever worked, Millennium Force</p>
+          </div>
+        </a>
+      </div>
+    
+  
+</div>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Mitchell&#39;s Portfolio</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

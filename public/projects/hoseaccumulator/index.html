@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Hose Accumulator | Mitchell&#39;s Portfolio</title>
+<meta name="keywords" content="">
+<meta name="description" content="A compact vertical accumulator that stores hose during high-speed assembly line operations.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/projects/hoseaccumulator/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon7.png" type="image/png" sizes="32x32">
+<meta name="theme-color" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/hoseaccumulator/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="/css/custom.css">
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+  var sel = 'a[href$="/contact/"], a[title="Contact"], a[href$="/contact"]';
+  var a = document.querySelector(sel);
+  if (!a) return;
+
+  
+  a.classList.add('contact-btn');
+  var sp = a.querySelector('span.active');
+  if (sp) sp.classList.add('contact-btn-inner');
+
+  
+  var p = a.parentElement;
+  if (p) {
+    var style = window.getComputedStyle(p);
+    if (style && style.display && style.display.indexOf('flex') === 0) {
+      a.style.marginLeft = 'auto';
+      a.style.alignSelf = 'center';
+    }
+  }
+});
+</script>
+
+<link rel="stylesheet" href="/css/override.css">
+</head>
+
+<body class="" id="top">
+<script>
+  document.body.classList.add('dark');
+</script>
+
+<header class="header">
+  <nav class="nav" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    
+    <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+      <a href="http://localhost:1313/" accesskey="h" 
+         title="Mitchell Henry’s Portfolio (Alt + H)"
+         style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+        <img src="http://localhost:1313/images/headshot.jpg" 
+             alt="Mitchell Henry" 
+             style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; box-shadow; margin-top: 15px">
+        <span style="font-weight: 700; font-size: 2rem;">Mitchell's Portfolio</span>
+      </a>
+    </div>
+
+    
+    <ul id="menu" style="list-style: none; display: flex; gap: 20px; margin: 0;">
+        <li>
+          <a href="http://localhost:1313/" 
+             title="Home"
+             style="text-decoration: none; color: inherit;">
+            <span
+                  style="font-weight: 500; color: #fff;">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/contact/" 
+             title="Contact"
+             style="text-decoration: none; color: inherit;">
+            <span
+                  style="font-weight: 500; color: #fff;">Contact</span>
+          </a>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+<style>
+   
+  main {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+   
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 3rem 6rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+
+   
+  .project-title {
+    width: 100%;
+    color: #ff4b4b;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+   
+  .details {
+    flex: 1 1 55%;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-right: 2rem;
+    box-sizing: border-box;
+  }
+
+  .details p {
+    margin: 0.6rem 0;
+  }
+
+  .details strong {
+    color: #ff4b4b;
+    font-weight: 700;
+    margin-right: 0.3rem;
+  }
+
+   
+  .robot-image {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+
+  .robot-image img {
+    width: 100%;
+    max-width: 420px;
+    height: 400px;
+    object-fit: cover;  
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+   
+  .video-section {
+    width: 70%;
+    margin: 2.5rem auto;
+    box-sizing: border-box;
+  }
+
+  .video-section h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .video-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #000;
+  }
+
+   
+  @media (max-width: 1000px) {
+    .project-container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .details {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .robot-image {
+      flex: 1 1 auto;
+      margin-bottom: 2rem;
+    }
+
+    .video-section {
+      width: 90%;
+    }
+  }
+</style>
+
+<div class="project-container">
+  <h1 class="project-title">Hose Accumulator</h1>
+
+  <div class="details">
+    <p><strong>Challenge:</strong>Find a way for operators to keep the assembly line at high speeds while cutting and storing processed hose. The solution also had to fit within a small 5×8 foot footprint.</p>
+
+    <p><strong>Solution:</strong>Instead of redesigning the cutting process, I utilized the unused vertical space — over 30 feet of height — to accumulate the hose upward. This provided operators with roughly 50 seconds of buffer time to cut and reset the line before the next cycle began.</p>
+
+    <p><strong>CAD:</strong>Inventor</p>
+
+    <p><strong>Animation:</strong>Because the design was unconventional and difficult to visualize, I created a 3D CAD model and animation to demonstrate how the accumulator functions. This served as the first proof of concept and aligned the team on the idea.</p>
+  </div>
+
+  <div class="robot-image">
+    <img src="/images/HoseAccumulatorThumbnail.png" alt="Hose Accumulator Machine">
+  </div>
+</div>
+
+<div class="video-section">
+  <h2>Accumulator Animation</h2>
+  <div class="video-wrapper">
+    <video controls muted preload="metadata" loop playsinline>
+      <source src="/videos/HoseAccumulatorFixed.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="video-description">
+    This is the animation I created. During normal use hose is fed straight through the machine. When it comes time to cut, the output side would clamp the hose down (not shown) while the carriage in the tower starts moving upwards. The incoming hose would be redirected up, over the carriage, and back down. The blue thing on the left is the hose saw.
+  </p>
+
+</div>
+
+<script>
+ 
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll("video");
+
+  const playClosest = () => {
+    let closestVideo = null;
+    let closestDistance = Infinity;
+
+    videos.forEach(video => {
+      const rect = video.getBoundingClientRect();
+      const videoCenter = rect.top + rect.height / 2;
+      const screenCenter = window.innerHeight / 2;
+      const distance = Math.abs(videoCenter - screenCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestVideo = video;
+      }
+    });
+
+    videos.forEach(v => {
+      if (v === closestVideo && closestDistance < window.innerHeight / 2) {
+        v.play();
+      } else {
+        v.pause();
+      }
+    });
+  };
+
+  window.addEventListener("scroll", playClosest);
+  window.addEventListener("resize", playClosest);
+  playClosest();
+});
+</script>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Mitchell&#39;s Portfolio</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
