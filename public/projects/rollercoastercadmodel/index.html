@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    
   .details {
-    flex: 1 1 55%;
+    flex: 1 1 40%;
     background-color: #1a1a1a;
     padding: 2rem;
     border-radius: 16px;
@@ -188,9 +188,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   .robot-image img {
     width: 100%;
-    max-width: 420px;
-    height: 400px;
-    object-fit: cover;  
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
@@ -229,6 +229,101 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
    
+  .image-section {
+    width: 70%;
+    margin: 2.5rem auto;
+    box-sizing: border-box;
+  }
+
+  .image-section h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    text-align: center;
+    background: none;
+  }
+
+  .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+
+  .image-description {
+    margin-top: 0.8rem;
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+   
+  .image-small {
+    width: 70%;
+    margin: 2.5rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .image-small h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+   
+  .image-small .image-wrapper {
+    display: inline-block;            
+    background: none;                 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  }
+  
+  .image-small img {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+   
+  .image-small .image-description {
+    color: #ddd;
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+   
   @media (max-width: 1000px) {
     .project-container {
       flex-direction: column;
@@ -245,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
       margin-bottom: 2rem;
     }
 
-    .video-section {
+    .video-section, .image-section {
       width: 90%;
     }
   }
@@ -257,13 +352,15 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="details">
     <p><strong>What:</strong>A passion project to create a model of the first ride I ever worked at using only a 3D printer.</p>
 
-    <p><strong>Process:</strong>Used Google Earth to record the height of the track every 30 feet. I also used it to stitch together top-down view images to create the layout.</p>
+    <p><strong>Process:</strong>Used Google Earth to record the height of the track every 30 feet. I also used it to stitch together top-down view images to create a CAD model of the layout.</p>
 
-    <p><strong>3D Printing:</strong>Used vase mode to print a single continuous wall at 0.05mm. This achieved incredibly smooth results.</p>
+    <p><strong>3D Printing:</strong>Used vase mode to print a single continuous wall at 0.05mm layer height. This achieved incredibly smooth results.</p>
     
-    <p><strong>Project Future:</strong>Incredible work has been made, but the project is on hold until I have more time.</p>
+    <p><strong>Projects Future:</strong>Incredible work has been made, but the project is on hold until I have more time.</p>
     
     <p><strong>CAD:</strong>Fusion 360</p>
+    
+    <p><strong>3D Printer:</strong>Bambu X1C</p>
   </div>
 
   <div class="robot-image">
@@ -272,7 +369,35 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 
+<div class="image-section">
+  <h2>Individual Track Segment</h2>
+  <div class="image-wrapper">
+    <img src="/images/MillenniumForceCADPiece.png" alt="Millennium Force Track Height Mapping">
+  </div>
+  <p class="image-description">
+    The track is split into over 200 segments for easier printing.
+  </p>
+</div>
 
+<div class="image-section">
+  <h2>High Quality</h2>
+  <div class="image-wrapper">
+    <img src="/images/MillenniumForcePrintedTrack.png" alt="Millennium Force Layout Reference">
+  </div>
+  <p class="image-description">
+    The track piece on the top is printed at a 0.05mm layer height and is very smooth to the human eye. The bottom one has a 0.16mm layer height. This is under a microscope.
+  </p>
+</div>
+
+<div class="image-small">
+  <h2>Support</h2>
+  <div class="image-wrapper">
+    <img src="/images/MillenniumForceSupport.png" alt="3D Printed Track Sections">
+  </div>
+  <p class="image-description">
+    One of the printed and assembled supports
+  </p>
+</div>
 
 <script>
  
