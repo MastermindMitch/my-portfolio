@@ -1,0 +1,195 @@
+{{ define "main" }}
+<style>
+  /* ===== Force Full-Width Layout ===== */
+  main {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ===== Page Layout ===== */
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 3rem 6rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+
+  /* ===== Project Title ===== */
+  .project-title {
+    width: 100%;
+    color: #ff4b4b;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* ===== Left Text Section ===== */
+  .details {
+    flex: 1 1 55%;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-right: 2rem;
+    box-sizing: border-box;
+  }
+
+  .details p {
+    margin: 0.6rem 0;
+  }
+
+  .details strong {
+    color: #ff4b4b;
+    font-weight: 700;
+    margin-right: 0.3rem;
+  }
+
+  /* ===== Right Image Section ===== */
+  .robot-image {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+
+  .robot-image img {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    object-fit: cover; /* crops top and bottom */
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  /* ===== Video Section ===== */
+  .video-section {
+    width: 70%;
+    margin: 2.5rem auto;
+    box-sizing: border-box;
+  }
+
+  .video-section h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .video-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #000;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 1000px) {
+    .project-container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .details {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .robot-image {
+      flex: 1 1 auto;
+      margin-bottom: 2rem;
+    }
+
+    .video-section {
+      width: 90%;
+    }
+  }
+</style>
+
+<div class="project-container">
+  <h1 class="project-title">{{ .Title }}</h1>
+
+  <div class="details">
+    <p><strong>Challenge:</strong>Find a way for operators to keep the assembly line at high speeds while cutting and storing processed hose. The solution also had to fit within a small 5×8 foot footprint.</p>
+
+    <p><strong>Solution:</strong>Instead of redesigning the cutting process, I utilized the unused vertical space — over 30 feet of height — to accumulate the hose upward. This provided operators with roughly 50 seconds of buffer time to cut and reset the line before the next cycle began.</p>
+
+    <p><strong>CAD:</strong>Inventor</p>
+
+    <p><strong>Animation:</strong>Because the design was unconventional and difficult to visualize, I created a 3D CAD model and animation to demonstrate how the accumulator functions. This served as the first proof of concept and aligned the team on the idea.</p>
+  </div>
+
+  <div class="robot-image">
+    <img src="/images/HoseAccumulatorThumbnail.png" alt="Hose Accumulator Machine">
+  </div>
+</div>
+
+<div class="video-section">
+  <h2>Accumulator Animation</h2>
+  <div class="video-wrapper">
+    <video controls muted preload="metadata" loop playsinline>
+      <source src="/videos/HoseAccumulatorFixed2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="video-description">
+    This is the animation I created. During normal use hose is fed straight through the machine. When it comes time to cut, the output side would clamp the hose down (not shown) while the carriage in the tower starts moving upwards. The incoming hose would be redirected up, over the carriage, and back down. The blue thing on the left is the hose saw.
+  </p>
+
+</div>
+
+<script>
+/* ========== Only Play the Closest Video ========== */
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll("video");
+
+  const playClosest = () => {
+    let closestVideo = null;
+    let closestDistance = Infinity;
+
+    videos.forEach(video => {
+      const rect = video.getBoundingClientRect();
+      const videoCenter = rect.top + rect.height / 2;
+      const screenCenter = window.innerHeight / 2;
+      const distance = Math.abs(videoCenter - screenCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestVideo = video;
+      }
+    });
+
+    videos.forEach(v => {
+      if (v === closestVideo && closestDistance < window.innerHeight / 2) {
+        v.play();
+      } else {
+        v.pause();
+      }
+    });
+  };
+
+  window.addEventListener("scroll", playClosest);
+  window.addEventListener("resize", playClosest);
+  playClosest();
+});
+</script>
+{{ end }}
+

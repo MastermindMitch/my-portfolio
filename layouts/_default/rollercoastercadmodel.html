@@ -1,0 +1,328 @@
+{{ define "main" }}
+<style>
+  /* ===== Force Full-Width Layout ===== */
+  main {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ===== Page Layout ===== */
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 3rem 6rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+
+  /* ===== Project Title ===== */
+  .project-title {
+    width: 100%;
+    color: #ff4b4b;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* ===== Left Text Section ===== */
+  .details {
+    flex: 1 1 40%;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-right: 2rem;
+    box-sizing: border-box;
+  }
+
+  .details p {
+    margin: 0.6rem 0;
+  }
+
+  .details strong {
+    color: #ff4b4b;
+    font-weight: 700;
+    margin-right: 0.3rem;
+  }
+
+  /* ===== Right Image Section ===== */
+  .robot-image {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+
+  .robot-image img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-bottom: 1rem;
+  }
+
+  /* ===== Credit Text for Secondary Image ===== */
+  .image-credit {
+    color: #ccc;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .image-credit a {
+    color: #ff4b4b;
+    text-decoration: none;
+  }
+
+  .image-credit a:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== Video Section ===== */
+  .video-section {
+    width: 70%;
+    margin: 2.5rem auto;
+    box-sizing: border-box;
+  }
+
+  .video-section h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .video-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+    border-radius: 12px;
+    background: #000;
+    object-fit: contain;
+  }
+
+  /* ===== Image Section ===== */
+  .image-section {
+    width: 70%;
+    margin: 2.5rem auto;
+    box-sizing: border-box;
+  }
+
+  .image-section h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    text-align: center;
+    background: none;
+  }
+
+  .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+
+  .image-description {
+    margin-top: 0.8rem;
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  /* ===== Make Only the Last Image Narrower ===== */
+  .image-small {
+    width: 70%;
+    margin: 2.5rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .image-small h2 {
+    color: #ff4b4b;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .image-small .image-wrapper {
+    display: inline-block;
+    background: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  }
+  
+  .image-small img {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .image-small .image-description {
+    color: #ddd;
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 1000px) {
+    .project-container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .details {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .robot-image {
+      flex: 1 1 auto;
+      margin-bottom: 2rem;
+    }
+
+    .video-section, .image-section {
+      width: 90%;
+    }
+  }
+</style>
+
+<div class="project-container">
+  <h1 class="project-title">{{ .Title }}</h1>
+
+  <div class="details">
+    <p><strong>What:</strong>A passion project to create a model of the first ride I ever worked at using only a 3D printer.</p>
+    <p><strong>Process:</strong>Used Google Earth to record the height of the track every 30 feet. I also used it to stitch together top-down view images to create a CAD model of the layout.</p>
+    <p><strong>3D Printing:</strong>Used vase mode to print a single continuous wall at 0.05mm layer height. This achieved incredibly smooth results.</p>
+    <p><strong>Projects Future:</strong>Incredible work has been made, but the project is on hold until I have more time.</p>
+    <p><strong>CAD:</strong>Fusion 360</p>
+    <p><strong>3D Printer:</strong>Bambu X1C</p>
+  </div>
+
+  <div class="robot-image">
+    <img src="/images/MillenniumForceModel.png" alt="Roller Coaster CAD Model">
+
+    <img src="/images/MillenniumForce.jpg" alt="Millennium Force at Cedar Point" style="width:100%;max-width:1000px;margin-top:1rem;">
+    <p class="image-credit">
+      Millennium Force (Cedar Point) by Judith Jackson, licensed under
+      <a href="https://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, via
+      <a href="https://commons.wikimedia.org/wiki/File:Millennium_Force_(Cedar_Point)_2023_1.jpg" target="_blank">Wikimedia Commons</a>.
+    </p>
+  </div>
+</div>
+
+<!-- ===== Example Image Sections ===== -->
+<div class="image-section">
+  <h2>Individual Track Segment</h2>
+  <div class="image-wrapper">
+    <img src="/images/MillenniumForceCADPiece.png" alt="Millennium Force Track Height Mapping">
+  </div>
+  <p class="image-description">
+    The track is split into over 200 segments for easier printing.
+  </p>
+</div>
+
+<div class="image-section">
+  <h2>High Quality</h2>
+  <div class="image-wrapper">
+    <img src="/images/MillenniumForcePrintedTrack.png" alt="Millennium Force Layout Reference">
+  </div>
+  <p class="image-description">
+    The track piece on the top is printed at a 0.05mm layer height and is very smooth to the human eye. The bottom one has a 0.16mm layer height. This is under a microscope.
+  </p>
+</div>
+
+<div class="image-small">
+  <h2>Support</h2>
+  <div class="image-wrapper">
+    <img src="/images/MillenniumForceSupport.png" alt="3D Printed Track Sections">
+  </div>
+  <p class="image-description">
+    One of the printed and assembled supports
+  </p>
+</div>
+
+<script>
+/* ========== Only Play the Closest Video ========== */
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll("video");
+
+  const playClosest = () => {
+    let closestVideo = null;
+    let closestDistance = Infinity;
+
+    videos.forEach(video => {
+      const rect = video.getBoundingClientRect();
+      const videoCenter = rect.top + rect.height / 2;
+      const screenCenter = window.innerHeight / 2;
+      const distance = Math.abs(videoCenter - screenCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestVideo = video;
+      }
+    });
+
+    videos.forEach(v => {
+      if (v === closestVideo && closestDistance < window.innerHeight / 2) {
+        v.play();
+      } else {
+        v.pause();
+      }
+    });
+  };
+
+  window.addEventListener("scroll", playClosest);
+  window.addEventListener("resize", playClosest);
+  playClosest();
+});
+</script>
+{{ end }}
+
