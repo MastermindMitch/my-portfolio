@@ -1,7 +1,7 @@
 ---
 title: "3D Printing Manual"
 layout: 3dprintingmanual
-image: "images/MaterialsFrontside1.png"
+image: "images/MaterialsFrontside1.webp"
 description: "A comprehensive guide to 3D printing created for both beginners and advanced users in the workplace"
 draft: false
 markup: "html"

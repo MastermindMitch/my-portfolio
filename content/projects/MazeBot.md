@@ -1,7 +1,7 @@
 ---
 title: "Maze Bot"
 layout: mazebot
-image: "images/MazeBotThumbnail.jpg"
+image: "images/MazeBotThumbnail.webp"
 description: "Autonomous maze-solving robot that maps and optimizes the path without touching any walls"
 draft: false
 markup: "html"

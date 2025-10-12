@@ -1,7 +1,7 @@
 ---
 title: "Roller Coaster Model"
 layout: rollercoastercadmodel
-image: "images/MillenniumForceModel.png"
+image: "images/MillenniumForceModel.webp"
 description: "Model of the first ride I ever worked, Millennium Force"
 draft: false
 markup: "html"

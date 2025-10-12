@@ -1,7 +1,7 @@
 ---
 title: "Nylon Heat Welder"
 layout: nylonheatwelder
-image: "images/NylonHeatWelderThumbnail.jpg"
+image: "images/NylonHeatWelderThumbnail.webp"
 description: "Designed a machine to heat weld two nylon rods"
 draft: false
 markup: "html"

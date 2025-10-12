@@ -1,7 +1,7 @@
 ---
 title: "Hose Accumulator"
 layout: hoseaccumulator
-image: "images/HoseAccumulatorThumbnail.png"
+image: "images/HoseAccumulatorThumbnail.webp"
 description: "A compact vertical accumulator that stores hose during high-speed assembly line operations"
 draft: false
 markup: "html"
