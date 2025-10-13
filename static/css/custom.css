@@ -1,21 +1,28 @@
 /* static/css/custom.css
    Styles for contact button + contact form
 */
+/* make sure custom styles override theme styles */
+:root {
+  --custom-css-loaded: true;
+}
+
 
 /* ---------- Contact Button ---------- */
 a[href$="/contact/"] {
   display: inline-block !important;
-  background: #525252 !important;       /* default button background */
+  background: #525252 !important;
   color: #FFFFFF !important;
-  padding: 8px 14px !important;         
+  padding: 10px 16px !important;
   border-radius: 6px !important;
   font-weight: 600 !important;
+  font-size: 20px !important;          /* <=== added this line */
   text-decoration: none !important;
   line-height: 1.2 !important;
   vertical-align: middle !important;
   box-sizing: border-box !important;
   transition: background-color .18s ease, color .18s ease;
 }
+
 
 a[href$="/contact/"] .active {
   background: transparent !important;
@@ -53,6 +60,49 @@ a[href$="/contact/"] .active::after {
     font-size: 14px !important;
   }
 }
+
+
+
+
+/* ======= Base Home link style ======= */
+a[title="Home"] span {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  text-decoration: none !important; /* No underline by default */
+}
+
+/* ======= Case 1 & 2: On Home page (active) =======
+   - Home is underlined once, even on hover */
+a[title="Home"].active span,
+a[title="Home"][aria-current="page"] span,
+a[title="Home"].current span {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+  text-decoration-color: #ff4b4b !important; /* Change this to match your accent color */
+}
+
+/* Make sure hovering doesn’t add a second underline while active */
+a[title="Home"].active:hover span,
+a[title="Home"][aria-current="page"]:hover span,
+a[title="Home"].current:hover span {
+  text-decoration: underline !important;
+}
+
+/* ======= Case 3 & 4: Not on Home page =======
+   - No underline normally, underline only on hover */
+a[title="Home"]:not(.active):not([aria-current="page"]):not(.current) span {
+  text-decoration: none !important;
+}
+
+a[title="Home"]:not(.active):not([aria-current="page"]):not(.current):hover span {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  text-decoration-color: #ff4b4b !important;
+}
+
 
 /* ---------- Contact Form (Dark Theme Override) ---------- */
 form[name="contact"] {

@@ -2,7 +2,27 @@
 title: "Contact"
 ---
 {{< rawhtml >}}
-<div class="contact-intro">
+<style>
+    .details {
+        width: 100%;
+        margin-bottom: 2.5rem;
+  }
+
+  .details p {
+    margin: 0.6rem 0;
+  }
+
+  .details a {
+    color: #ff4b4b;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .details a:hover {
+    text-decoration: underline;
+  }
+</style>
+<div class="contact-intro details">
   <p>
     Fill out the form below or email me directly at
     <a href="mailto:mthenry@ksu.edu">mthenry@ksu.edu</a>.

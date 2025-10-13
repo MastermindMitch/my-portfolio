@@ -2,35 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mitchell-henry.netlify.app/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-09-11T20:28:11-05:00</lastmod>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/posts/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-11T20:28:11-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/posts/test/</loc>
+    <loc>http://localhost:1313/posts/test/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/autonomouscombatrobot/</loc>
+    <loc>http://localhost:1313/projects/autonomouscombatrobot/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</loc>
+    <loc>http://localhost:1313/projects/3dprintingmanual/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/hoseaccumulator/</loc>
+    <loc>http://localhost:1313/projects/hoseaccumulator/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/mazebot/</loc>
+    <loc>http://localhost:1313/projects/mazebot/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/nylonheatwelder/</loc>
+    <loc>http://localhost:1313/projects/nylonheatwelder/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/projects/rollercoastercadmodel/</loc>
+    <loc>http://localhost:1313/projects/rollercoastercadmodel/</loc>
   </url><url>
-    <loc>https://mitchell-henry.netlify.app/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
