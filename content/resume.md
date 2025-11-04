@@ -86,7 +86,7 @@ hideTitle: true
 
 <div class="resume-wrapper">
   <div class="resume-header">
-    <h1>Resume</h1>
+    <h1>Resumé</h1>
     <a href="/images/Resume11_4_2025.pdf" class="download-btn" download>Download PDF</a>
   </div>
 

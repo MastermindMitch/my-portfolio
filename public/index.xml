@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on Mitchell&#39;s Portfolio</title>
-    <link>https://mitchell-henry.netlify.app/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Projects on Mitchell&#39;s Portfolio</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mitchell-henry.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post</title>
-      <link>https://mitchell-henry.netlify.app/posts/test/</link>
+      <link>http://localhost:1313/posts/test/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/posts/test/</guid>
+      <guid>http://localhost:1313/posts/test/</guid>
       <description>&lt;p&gt;This is a test post.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://mitchell-henry.netlify.app/resume/</link>
+      <link>http://localhost:1313/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/resume/</guid>
+      <guid>http://localhost:1313/resume/</guid>
       <description>&lt;style&gt;
   /* Keep PaperMod&#39;s background, but allow full width content */
   main {
@@ -101,34 +101,34 @@
 
 &lt;div class=&#34;resume-wrapper&#34;&gt;
   &lt;div class=&#34;resume-header&#34;&gt;
-    &lt;h1&gt;Resume&lt;/h1&gt;
-    &lt;a href=&#34;https://mitchell-henry.netlify.app/images/Resume11_4_2025.pdf&#34; class=&#34;download-btn&#34; download&gt;Download PDF&lt;/a&gt;
+    &lt;h1&gt;Resumé&lt;/h1&gt;
+    &lt;a href=&#34;http://localhost:1313/images/Resume11_4_2025.pdf&#34; class=&#34;download-btn&#34; download&gt;Download PDF&lt;/a&gt;
   &lt;/div&gt;
 
   &lt;div class=&#34;resume-display&#34;&gt;
-    &lt;embed src=&#34;https://mitchell-henry.netlify.app/images/Resume11_4_2025.pdf#toolbar=0&amp;view=FitH&#34; type=&#34;application/pdf&#34;&gt;
+    &lt;embed src=&#34;http://localhost:1313/images/Resume11_4_2025.pdf#toolbar=0&amp;view=FitH&#34; type=&#34;application/pdf&#34;&gt;
   &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     <item>
       <title>3D Printing Manual</title>
-      <link>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</link>
+      <link>http://localhost:1313/projects/3dprintingmanual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</guid>
+      <guid>http://localhost:1313/projects/3dprintingmanual/</guid>
       <description>A comprehensive guide to 3D printing created for both beginners and advanced users in the workplace</description>
     </item>
     <item>
       <title>Autonomous Combat Robot</title>
-      <link>https://mitchell-henry.netlify.app/projects/autonomouscombatrobot/</link>
+      <link>http://localhost:1313/projects/autonomouscombatrobot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/projects/autonomouscombatrobot/</guid>
+      <guid>http://localhost:1313/projects/autonomouscombatrobot/</guid>
       <description>Autonomous combat robot</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://mitchell-henry.netlify.app/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;style&gt;
     .details {
         width: 100%;
@@ -171,30 +171,30 @@
     </item>
     <item>
       <title>Hose Accumulator</title>
-      <link>https://mitchell-henry.netlify.app/projects/hoseaccumulator/</link>
+      <link>http://localhost:1313/projects/hoseaccumulator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/projects/hoseaccumulator/</guid>
+      <guid>http://localhost:1313/projects/hoseaccumulator/</guid>
       <description>A compact vertical accumulator that stores hose during high-speed assembly line operations</description>
     </item>
     <item>
       <title>Maze Bot</title>
-      <link>https://mitchell-henry.netlify.app/projects/mazebot/</link>
+      <link>http://localhost:1313/projects/mazebot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/projects/mazebot/</guid>
+      <guid>http://localhost:1313/projects/mazebot/</guid>
       <description>Autonomous maze-solving robot that maps and optimizes the path without touching any walls</description>
     </item>
     <item>
       <title>Nylon Heat Welder</title>
-      <link>https://mitchell-henry.netlify.app/projects/nylonheatwelder/</link>
+      <link>http://localhost:1313/projects/nylonheatwelder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/projects/nylonheatwelder/</guid>
+      <guid>http://localhost:1313/projects/nylonheatwelder/</guid>
       <description>Designed a machine to heat weld two nylon rods</description>
     </item>
     <item>
       <title>Roller Coaster Model</title>
-      <link>https://mitchell-henry.netlify.app/projects/rollercoastercadmodel/</link>
+      <link>http://localhost:1313/projects/rollercoastercadmodel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mitchell-henry.netlify.app/projects/rollercoastercadmodel/</guid>
+      <guid>http://localhost:1313/projects/rollercoastercadmodel/</guid>
       <description>Model of the first ride I ever worked, Millennium Force</description>
     </item>
   </channel>
