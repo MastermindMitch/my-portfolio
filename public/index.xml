@@ -102,11 +102,11 @@
 &lt;div class=&#34;resume-wrapper&#34;&gt;
   &lt;div class=&#34;resume-header&#34;&gt;
     &lt;h1&gt;Resumé&lt;/h1&gt;
-    &lt;a href=&#34;http://localhost:1313/images/Resume11_4_2025.pdf&#34; class=&#34;download-btn&#34; download&gt;Download PDF&lt;/a&gt;
+    &lt;a href=&#34;http://localhost:1313/images/MitchellHenryResume.pdf&#34; class=&#34;download-btn&#34; download&gt;Download PDF&lt;/a&gt;
   &lt;/div&gt;
 
   &lt;div class=&#34;resume-display&#34;&gt;
-    &lt;embed src=&#34;http://localhost:1313/images/Resume11_4_2025.pdf#toolbar=0&amp;view=FitH&#34; type=&#34;application/pdf&#34;&gt;
+    &lt;embed src=&#34;http://localhost:1313/images/MitchellHenryResume.pdf#toolbar=0&amp;view=FitH&#34; type=&#34;application/pdf&#34;&gt;
   &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
