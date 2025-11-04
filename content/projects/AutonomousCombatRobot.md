@@ -2,7 +2,7 @@
 title: "Autonomous Combat Robot"
 layout: autonomouscombatrobot
 image: "images/Unity.webp"
-description: "Autonomous combat robot"
+description: "Robot that hunts opponents autonomously using vision and sensors"
 draft: false
 markup: "html"
 ---

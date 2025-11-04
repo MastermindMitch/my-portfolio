@@ -19,7 +19,7 @@
       <link>http://localhost:1313/projects/autonomouscombatrobot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/autonomouscombatrobot/</guid>
-      <description>Autonomous combat robot</description>
+      <description>Robot that hunts opponents autonomously using vision and sensors</description>
     </item>
     <item>
       <title>Hose Accumulator</title>
