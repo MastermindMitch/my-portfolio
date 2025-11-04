@@ -72,6 +72,13 @@ a[title="Home"] span {
   text-decoration: none !important; /* No underline by default */
 }
 
+a[title="Resumé"] span {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  text-decoration: none !important; /* No underline by default */
+}
+
 /* ======= Case 1 & 2: On Home page (active) =======
    - Home is underlined once, even on hover */
 a[title="Home"].active span,
@@ -90,6 +97,23 @@ a[title="Home"].current:hover span {
   text-decoration: underline !important;
 }
 
+   - Resume is underlined once, even on hover */
+a[title="Resumé"].active span,
+a[title="Resumé"][aria-current="page"] span,
+a[title="Resumé"].current span {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+  text-decoration-color: #ff4b4b !important; /* Change this to match your accent color */
+}
+
+/* Make sure hovering doesn’t add a second underline while active */
+a[title="Resumé"].active:hover span,
+a[title="Resumé"][aria-current="page"]:hover span,
+a[title="Resumé"].current:hover span {
+  text-decoration: underline !important;
+}
+
 /* ======= Case 3 & 4: Not on Home page =======
    - No underline normally, underline only on hover */
 a[title="Home"]:not(.active):not([aria-current="page"]):not(.current) span {
@@ -97,6 +121,17 @@ a[title="Home"]:not(.active):not([aria-current="page"]):not(.current) span {
 }
 
 a[title="Home"]:not(.active):not([aria-current="page"]):not(.current):hover span {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  text-decoration-color: #ff4b4b !important;
+}
+
+a[title="Resumé"]:not(.active):not([aria-current="page"]):not(.current) span {
+  text-decoration: none !important;
+}
+
+a[title="Resumé"]:not(.active):not([aria-current="page"]):not(.current):hover span {
   text-decoration: underline !important;
   text-decoration-thickness: 2px !important;
   text-underline-offset: 4px !important;
@@ -229,8 +264,8 @@ form[name="contact"] textarea:-webkit-autofill:focus {
 
 /* Hover brand colors */
 .social-icons a[aria-label="LinkedIn"]:hover { color: #0077b5; }
-.social-icons a[aria-label="Handshake"]:hover { color: #f68b1f; }
-.social-icons a[aria-label="GitHub"]:hover { color: #333333; }
+.social-icons a[aria-label="Handshake"]:hover { color: #D3FB52; }
+.social-icons a[aria-label="Indeed"]:hover { color: #003A9B; }
 
 /* Accessibility cleanup */
 .social-icons a:focus,

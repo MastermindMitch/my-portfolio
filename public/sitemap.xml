@@ -2,14 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mitchell-henry.netlify.app/</loc>
-    <lastmod>2025-09-11T20:28:11-05:00</lastmod>
-  </url><url>
     <loc>https://mitchell-henry.netlify.app/posts/</loc>
+    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mitchell-henry.netlify.app/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mitchell-henry.netlify.app/posts/test/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mitchell-henry.netlify.app/resume/</loc>
   </url><url>
     <loc>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</loc>
   </url><url>

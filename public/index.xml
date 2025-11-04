@@ -16,6 +16,101 @@
       <description>&lt;p&gt;This is a test post.&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>https://mitchell-henry.netlify.app/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mitchell-henry.netlify.app/resume/</guid>
+      <description>&lt;style&gt;
+  /* Keep PaperMod&#39;s background, but allow full width content */
+  main {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .resume-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .resume-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .resume-header h1 {
+    font-size: 2.3rem;
+    margin: 0;
+  }
+
+  .download-btn {
+    display: inline-block;
+    background-color: #ff4b4b;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 1rem;
+  }
+
+  .download-btn:hover {
+    background-color: #ff6a6a;
+  }
+
+  .resume-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume-display embed {
+    width: 90vw;
+    height: calc(90vw * 1.294);
+    max-width: 1000px;
+    max-height: 1294px;
+    border: none;
+    border-radius: 10px;
+
+    /* Thicker, more defined border */
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.35);
+
+    background-color: white;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .resume-display embed {
+      width: 95vw;
+      height: calc(95vw * 1.294);
+      box-shadow: 0 0 30px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    .resume-header h1 {
+      font-size: 1.8rem;
+    }
+  }
+&lt;/style&gt;
+
+&lt;div class=&#34;resume-wrapper&#34;&gt;
+  &lt;div class=&#34;resume-header&#34;&gt;
+    &lt;h1&gt;Resume&lt;/h1&gt;
+    &lt;a href=&#34;https://mitchell-henry.netlify.app/images/Resume11_4_2025.pdf&#34; class=&#34;download-btn&#34; download&gt;Download PDF&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;resume-display&#34;&gt;
+    &lt;embed src=&#34;https://mitchell-henry.netlify.app/images/Resume11_4_2025.pdf#toolbar=0&amp;view=FitH&#34; type=&#34;application/pdf&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    <item>
       <title>3D Printing Manual</title>
       <link>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
