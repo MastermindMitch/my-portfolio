@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on Mitchell&#39;s Portfolio</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://mitchell-henry.netlify.app/projects/</link>
     <description>Recent content in Projects on Mitchell&#39;s Portfolio</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mitchell-henry.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Printing Manual</title>
-      <link>http://localhost:1313/projects/3dprintingmanual/</link>
+      <link>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3dprintingmanual/</guid>
+      <guid>https://mitchell-henry.netlify.app/projects/3dprintingmanual/</guid>
       <description>A comprehensive guide to 3D printing created for both beginners and advanced users in the workplace</description>
     </item>
     <item>
       <title>Autonomous Combat Robot</title>
-      <link>http://localhost:1313/projects/autonomouscombatrobot/</link>
+      <link>https://mitchell-henry.netlify.app/projects/autonomouscombatrobot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/autonomouscombatrobot/</guid>
+      <guid>https://mitchell-henry.netlify.app/projects/autonomouscombatrobot/</guid>
       <description>Robot that hunts opponents autonomously using vision and sensors</description>
     </item>
     <item>
       <title>Hose Accumulator</title>
-      <link>http://localhost:1313/projects/hoseaccumulator/</link>
+      <link>https://mitchell-henry.netlify.app/projects/hoseaccumulator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hoseaccumulator/</guid>
+      <guid>https://mitchell-henry.netlify.app/projects/hoseaccumulator/</guid>
       <description>A compact vertical accumulator that stores hose during high-speed assembly line operations</description>
     </item>
     <item>
       <title>Maze Bot</title>
-      <link>http://localhost:1313/projects/mazebot/</link>
+      <link>https://mitchell-henry.netlify.app/projects/mazebot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/mazebot/</guid>
+      <guid>https://mitchell-henry.netlify.app/projects/mazebot/</guid>
       <description>Autonomous maze-solving robot that maps and optimizes the path without touching any walls</description>
     </item>
     <item>
       <title>Nylon Heat Welder</title>
-      <link>http://localhost:1313/projects/nylonheatwelder/</link>
+      <link>https://mitchell-henry.netlify.app/projects/nylonheatwelder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/nylonheatwelder/</guid>
+      <guid>https://mitchell-henry.netlify.app/projects/nylonheatwelder/</guid>
       <description>Designed a machine to heat weld two nylon rods</description>
     </item>
     <item>
       <title>Roller Coaster Model</title>
-      <link>http://localhost:1313/projects/rollercoastercadmodel/</link>
+      <link>https://mitchell-henry.netlify.app/projects/rollercoastercadmodel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/rollercoastercadmodel/</guid>
+      <guid>https://mitchell-henry.netlify.app/projects/rollercoastercadmodel/</guid>
       <description>Model of the first ride I ever worked, Millennium Force</description>
     </item>
   </channel>
